@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CP Tech Links</title>
+	<style>
+		/*
+		.box {
+			width: 500px;
+			height: 500px;
+			background-color: gray;
+			border: 1px solid black;
+			display: inline-block;
+			margin: 5px;
+			text-align: center;
+			line-height: 100px;
+			font-size: 36px;
+			
+            
+		}
+		*/
+
+		.box {
+			background-color: #f5f5f5;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			text-align: center;
+			font-size: 36px;
+			color: #333;
+
+			width: 500px;
+			height: 500px;
+			display: inline-block;
+			line-height: 100px;
+			margin: 5px;
+			}
+
+		.box:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		.box:active {
+			transform: translateY(0);
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	}
+
+        /*
+		.banner {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+			margin-bottom: 10px;
+            width: 50%;
+			min-width: 1800px;
+        }
+		*/
+		.banner {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-width: 1200px;
+		}
+
+		.label-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-width: 1200px;
+		}		
+
+		label {
+			text-align: center;
+		}
+
+		.row {
+			margin-bottom: 10px;
+		}
+
+		#container {
+			margin: 5px auto;
+			width: 1600px;
+		}
+
+		/* #Glass .box:nth-of-type(1) {
+			background-color: red;
+		}
+
+		#Glass .box:nth-of-type(2) {
+			background-color: red;
+		}
+
+		#Glass .box:nth-of-type(3) {
+			background-color: red;
+		}
+
+        #Glass .box:nth-of-type(4) {
+			background-color: red;
+		}
+
+        #Glass .box:nth-of-type(5) {
+			background-color: red;
+		}
+
+        #Glass .box:nth-of-type(6) {
+			background-color: red;
+		}
+
+		#Mobile .box:nth-of-type(1) {
+			background-color: yellow;
+		}
+
+		#Mobile .box:nth-of-type(2) {
+			background-color: yellow;
+		}
+
+		#Mobile .box:nth-of-type(3) {
+			background-color: yellow;
+		}
+
+        #Mobile .box:nth-of-type(4) {
+			background-color: yellow;
+		}
+
+        #Mobile .box:nth-of-type(5) {
+			background-color: yellow;
+		}
+
+        #Mobile .box:nth-of-type(6) {
+			background-color: yellow;
+		}
+
+		#Staff .box:nth-of-type(1) {
+			background-color: teal;
+		}
+
+		#Staff .box:nth-of-type(2) {
+			background-color: teal;
+		}
+
+		#Staff .box:nth-of-type(3) {
+			background-color: teal;
+		}
+
+        #Staff .box:nth-of-type(4) {
+			background-color: teal;
+		}
+
+        #Staff .box:nth-of-type(5) {
+			background-color: teal;
+		}
+
+        #Staff .box:nth-of-type(6) {
+			background-color: teal;
+		}
+		*/
+
+        body {
+            background-image: url('https://static.skyassets.com/contentstack/assets/bltdc2476c7b6b194dd/bltf8f490d3f3303ba8/616042e8aeba391136e4460b/New-HERO.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+	</style>
+</head>
+<body>
+    <div class="banner">
+		<img src="images/banner.png" alt="Banner Image" width="1200" height="auto" class="center">
+	</div>
+	<div class="label-container">
+		<label style="color: white;font-size: 50px;"  for="state-select">Select your Workstream:&nbsp;</label>
+			<select style="font-size: 35px;" " id="state-select">
+				<option style="font-size: 35px;" value="Glass">Glass</option>
+				<option style="font-size: 35px;" value="Mobile">Mobile</option>
+				<option style="font-size: 35px;" value="Staff">Staff</option>
+				<option style="font-size: 35px;" value="TV">TV</option>
+				<option style="font-size: 35px;" value="Support Network">Support Network</option>
+				<option style="font-size: 35px;" value="Leader Support">Leader Support</option>
+				<option style="font-size: 35px;" value="CPL">CPL</option>
+				<option style="font-size: 35px;" value="CPS">CPS</option>
+			</select>
+	</div>
+	<div id="container">
+		<div id="Glass" class="row">
+			<div class="box">Glass 1</div>
+			<div class="box">Glass 2</div>
+			<div class="box">Glass 3</div>
+            <div class="box">Glass 4</div>
+            <div class="box">Glass 5</div>
+            <div class="box">Glass 6</div>
+		</div>
+		<div id="Mobile" class="row" style="display:none;">
+			<div class="box">Mobile 1</div>
+			<div class="box">Mobile 2</div>
+			<div class="box">Mobile 3</div>
+            <div class="box">Mobile 4</div>
+            <div class="box">Mobile 5</div>
+            <div class="box">Mobile 6</div>
+		</div>
+		<div id="TV" class="row" style="display:none;">
+			<div class="box">TV 1</div>
+			<div class="box">TV 2</div>
+			<div class="box">TV 3</div>
+            <div class="box">TV 4</div>
+            <div class="box">TV 5</div>
+            <div class="box">TV 6</div>
+		</div>
+		<div id="Support Network" class="row" style="display:none;">
+			<div class="box">Support Network 1</div>
+			<div class="box">Support Network 2</div>
+			<div class="box">Support Network 3</div>
+            <div class="box">Support Network 4</div>
+            <div class="box">Support Network 5</div>
+            <div class="box">Support Network 6</div>
+		</div>
+		<div id="Staff" class="row" style="display:none;">
+			<div class="box">Staff 1</div>
+			<div class="box">Staff 2</div>
+			<div class="box">Staff 3</div>
+            <div class="box">Staff 4</div>
+            <div class="box">Staff 5</div>
+            <div class="box">Staff 6</div>
+		</div>
+		<div id="Leader Support" class="row" style="display:none;">
+			<div class="box">Leader Support 1</div>
+			<div class="box">Leader Support 2</div>
+			<div class="box">Leader Support 3</div>
+            <div class="box">Leader Support 4</div>
+            <div class="box">Leader Support 5</div>
+            <div class="box">Leader Support 6</div>
+		</div>
+		<div id="CPL" class="row" style="display:none;">
+			<div class="box">CPL 1</div>
+			<div class="box">CPL 2</div>
+			<div class="box">CPL 3</div>
+            <div class="box">CPL 4</div>
+            <div class="box">CPL 5</div>
+            <div class="box">CPL 6</div>
+		</div>
+		<div id="CPS" class="row" style="display:none;">
+			<div class="box">CPS 1</div>
+			<div class="box">CPS 2</div>
+			<div class="box">CPS 3</div>
+            <div class="box">CPS 4</div>
+            <div class="box">CPS 5</div>
+            <div class="box">CPS 6</div>
+		</div>
+	</div>
+	<script>
+		var select = document.getElementById("state-select");
+		select.addEventListener("change", function() {
+			var selectedState = select.options[select.selectedIndex].value;
+			var states = document.querySelectorAll(".row");
+			for (var i = 0; i < states.length; i++) {
+				states[i].style.display = "none";
+			}
+			document.getElementById(selectedState).style.display = "block";
+		});
+	</script>
+</body>
+</html>
